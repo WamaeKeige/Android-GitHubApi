@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorLinearBg"
+    tools:context=".UserActivity">
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+    <TableRow>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/avatar"
+        />
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:id="@+id/txtviewname"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/blacktext"
+            android:text="Rich text"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/txtviewfollowers"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/blacktext"
+            android:text="followers"/>
+
+       <TextView
+           android:layout_width="200dp"
+           android:layout_height="40dp"
+           android:id="@+id/txtviewfollowing"
+           android:layout_marginLeft="10dp"
+           android:textSize="18sp"
+           android:textColor="@color/blacktext"
+           android:text="following"/>
+    </TableRow>
+        <TableRow>
+       <TextView
+           android:layout_width="200dp"
+           android:layout_height="40dp"
+           android:id="@+id/txtviewemail"
+           android:layout_marginLeft="10dp"
+           android:textSize="18sp"
+           android:textColor="@color/blacktext"
+           android:text="email"/>
+
+
+       <TextView
+           android:layout_width="200dp"
+           android:layout_height="40dp"
+           android:id="@+id/txtviewlogin"
+           android:layout_marginLeft="10dp"
+           android:textSize="18sp"
+           android:textColor="@color/blacktext"
+           android:text="login"/>
+</TableRow>
+       <Button
+           android:id="@+id/btnrepo"
+           android:layout_width="150dp"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="150dp"
+           android:layout_marginTop="50dp"
+           android:background="@color/colorPrimary"
+           android:onClick="getRepos"
+           android:text="Fetch Repositories"
+           android:textColor="#FFFFFF"
+           tools:ignore="RtlCompat" />
+
+  </TableLayout>
+</LinearLayout>

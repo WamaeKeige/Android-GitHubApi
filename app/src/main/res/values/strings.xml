@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Rest Api</string>
+    <string name="demo_card_text">Card Text</string>
+</resources>
